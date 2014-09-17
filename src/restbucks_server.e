@@ -29,7 +29,7 @@ feature {NONE} -- Initialization
 		do
 			print ("Starting restbucks server...%N")
 			initialize_router
-			set_service_option ("port", 9090)
+			set_service_option ("port", 5000)
 			make_and_launch
 		end
 
