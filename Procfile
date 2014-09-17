@@ -1,1 +1,1 @@
-web: /app/restbucks
+web: restbucks
