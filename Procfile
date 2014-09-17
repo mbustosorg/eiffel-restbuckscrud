@@ -1,1 +1,1 @@
-web: ./restbucksd
+web: restbucks $PORT
