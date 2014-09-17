@@ -1,1 +1,1 @@
-web: ./restbucks
+web: ./restbucksd
