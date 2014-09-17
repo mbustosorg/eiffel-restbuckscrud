@@ -11,7 +11,7 @@ inherit
 		undefine
 			requires_proxy
 		end
-	
+
 	WSF_URI_TEMPLATE_HELPER_FOR_ROUTED_SERVICE
 
 	WSF_HANDLER_HELPER
@@ -20,6 +20,8 @@ inherit
 
 	WSF_NO_PROXY_POLICY
 
+	ARGUMENTS
+
 create
 	make
 
@@ -27,49 +29,10 @@ feature {NONE} -- Initialization
 
 	make
 		do
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			print ("Starting restbucks server...%N")
-			initialize_router
-			set_service_option ("port", 5000)
-			make_and_launch
+				print ("Starting restbucks server on port " + argument (1) + "...%N")
+				initialize_router
+				set_service_option ("port", argument (1).to_integer)
+				make_and_launch
 		end
 
 	setup_router
@@ -86,7 +49,7 @@ feature {NONE} -- Initialization
 
 
 note
-	copyright: "2011-2013, Javier Velilla and others"
+	copyright: "2011-2014, Javier Velilla and others"
 	license: "Eiffel Forum License v2 (see http://www.eiffel.com/licensing/forum.txt)"
 	source: "[
 			Eiffel Software
