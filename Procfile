@@ -1,1 +1,1 @@
-worker: restbucks $PORT
+web: startTarget
