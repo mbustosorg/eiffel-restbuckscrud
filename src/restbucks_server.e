@@ -27,9 +27,9 @@ feature {NONE} -- Initialization
 
 	make
 		do
-			initialize_router
-			set_service_option ("port", 80)
 			print ("Starting restbucks server...%N")
+			initialize_router
+			set_service_option ("port", 9090)
 			make_and_launch
 		end
 
