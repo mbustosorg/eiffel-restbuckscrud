@@ -1,1 +1,1 @@
-web: restbucks $PORT
+worker: restbucks $PORT
