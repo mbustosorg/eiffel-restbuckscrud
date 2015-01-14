@@ -1,6 +1,7 @@
 unixodbc-dev
 mysql-server
 libmysqlclient-dev
+libcairo2-dev
 libxtst-dev
 libgtk2.0-dev
 zlib1g-dev
